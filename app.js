@@ -1,25 +1,24 @@
 const inputs = document.querySelectorAll("input");
+const smalls = document.querySelectorAll("small");
 const form = document.querySelector("form");
 
+console.log(smalls);
 form.addEventListener("submit", function (a) {
     a.preventDefault();
+
     function checker(bor) {
         if (bor.value === "") {
             bor.className = "error";
-            document.querySelectorAll("small").forEach((s) => {
-                s.className = "errorSmall";
+            small.forEach((e) => {
+                e.className = "smallError";
             });
         }
     }
-
-    inputs.forEach((e) => {
-        e.addEventListener("click", checker(e));
-    });
-
+    // Go back to the default after 1,5 sek
     setTimeout(function () {
         inputs.forEach((e) => {
             e.className = "";
-            document.querySelectorAll("small").forEach((s) => {
+            smalls.forEach((s) => {
                 s.className = "";
             });
         });
