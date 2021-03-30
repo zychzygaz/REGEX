@@ -64,3 +64,12 @@ small {
 .errorSmall {
     visibility: visible;
 }
+
+.gen label,
+input {
+    display: inline;
+}
+
+.main .row input.success {
+    border: 2px solid rgb(4, 167, 4);
+}

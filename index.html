@@ -13,33 +13,40 @@
             <form action="" method="">
                 <div class="row">
                     <label for="name">Name</label>
-                    <input type="text" placeholder="Name" id="name" />
-                    <small>Enter message</small>
+                    <input type="text" placeholder="Name" id="name" required />
+                    <small>Can not leave blank spaces</small>
                 </div>
                 <div class="row">
                     <label for="zipcode">Zipcode</label>
-                    <input type="text" placeholder="Zipcode" id="zipcode" />
-                    <small>Enter message</small>
+                    <input
+                        type="text"
+                        placeholder="Zip Code"
+                        id="zipCode"
+                        required
+                    />
+                    <small>Can not leave blank spaces</small>
                 </div>
                 <div class="row">
                     <label for="email">Email</label>
                     <input
-                        type="text"
+                        type="email"
                         placeholder="Email"
                         class=""
                         id="email"
+                        required
                     />
-                    <small>Enter message</small>
+                    <small>Can not leave blank spaces</small>
                 </div>
                 <div class="row">
                     <label for="phoneNumber">Phone Number</label>
                     <input
-                        type="text"
+                        type="tel"
                         placeholder="Phone Number"
                         class=""
                         id="phoneNumber"
+                        required
                     />
-                    <small>Enter message</small>
+                    <small>Can not leave blank spaces</small>
                 </div>
                 <button type="submit">Submit</button>
             </form>
